@@ -31,6 +31,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Local backup (SSS Resources page – do not commit)
+_backup_sss_resources/
+
 # PWA
 dev-dist/
 sw.js
