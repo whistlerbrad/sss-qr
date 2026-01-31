@@ -99,3 +99,9 @@
   color: var(--accent);
   border-left: 3px solid var(--accent);
 }
+
+.nav-drawer-separator {
+  height: 1px;
+  margin: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.12);
+}

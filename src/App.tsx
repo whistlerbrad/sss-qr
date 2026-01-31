@@ -13,6 +13,7 @@ import { Edging } from './pages/Edging'
 import { Pressure } from './pages/Pressure'
 import { TimingCoordination } from './pages/TimingCoordination'
 import { AlpineGroups101 } from './pages/AlpineGroups101'
+import { SSSResources } from './pages/SSSResources'
 import './App.css'
 
 const WHATSAPP_IMAGE = '/WhatsApp-Brad.jpg'
@@ -169,6 +170,12 @@ export default function App() {
       {view === 'alpinegroups101' && (
         <main className="app-main-content">
           <AlpineGroups101 />
+        </main>
+      )}
+
+      {view === 'sssresources' && (
+        <main className="app-main-content">
+          <SSSResources />
         </main>
       )}
 

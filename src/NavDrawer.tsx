@@ -1,6 +1,6 @@
 import './NavDrawer.css'
 
-export type NavView = 'home' | 'casi' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'alpinegroups101'
+export type NavView = 'home' | 'casi' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'alpinegroups101' | 'sssresources'
 
 interface NavDrawerProps {
   open: boolean
@@ -9,17 +9,24 @@ interface NavDrawerProps {
   onNavigate: (view: NavView) => void
 }
 
-const NAV_ITEMS: { id: NavView; label: string }[] = [
-  { id: 'home', label: 'QR Codes' },
-  { id: 'casi', label: 'CASI Study Guide' },
-  { id: 'lessonplans', label: 'Lesson Plans by Skill' },
-  { id: 'teachingscripts', label: 'Teaching Scripts' },
-  { id: 'positionbalance', label: 'Position & Balance' },
-  { id: 'pivotsteering', label: 'Pivot (Steering)' },
-  { id: 'edging', label: 'Edging' },
-  { id: 'pressure', label: 'Pressure' },
-  { id: 'timingcoordination', label: 'Timing & Coordination' },
-  { id: 'alpinegroups101', label: 'Alpine Groups 101' }
+type NavItem =
+  | { type: 'link'; id: NavView; label: string }
+  | { type: 'separator' }
+
+const NAV_ITEMS: NavItem[] = [
+  { type: 'link', id: 'home', label: 'QR Codes' },
+  { type: 'link', id: 'alpinegroups101', label: 'Alpine Groups 101' },
+  { type: 'separator' },
+  { type: 'link', id: 'casi', label: 'CASI Study Guide' },
+  { type: 'link', id: 'lessonplans', label: 'Lesson Plans by Skill' },
+  { type: 'link', id: 'teachingscripts', label: 'Teaching Scripts' },
+  { type: 'link', id: 'positionbalance', label: 'Position & Balance' },
+  { type: 'link', id: 'pivotsteering', label: 'Pivot (Steering)' },
+  { type: 'link', id: 'edging', label: 'Edging' },
+  { type: 'link', id: 'pressure', label: 'Pressure' },
+  { type: 'link', id: 'timingcoordination', label: 'Timing & Coordination' },
+  { type: 'separator' },
+  { type: 'link', id: 'sssresources', label: 'SSS Resources' }
 ]
 
 export function NavDrawer({ open, currentView, onClose, onNavigate }: NavDrawerProps) {
@@ -55,16 +62,21 @@ export function NavDrawer({ open, currentView, onClose, onNavigate }: NavDrawerP
           </button>
         </div>
         <nav className="nav-drawer-links">
-          {NAV_ITEMS.map(({ id, label }) => (
-            <button
-              key={id}
-              type="button"
-              className={`nav-drawer-link ${currentView === id ? 'active' : ''}`}
-              onClick={() => handleNav(id)}
-            >
-              {label}
-            </button>
-          ))}
+          {NAV_ITEMS.map((item, index) => {
+            if (item.type === 'separator') {
+              return <div key={`sep-${index}`} className="nav-drawer-separator" role="presentation" />
+            }
+            return (
+              <button
+                key={item.id}
+                type="button"
+                className={`nav-drawer-link ${currentView === item.id ? 'active' : ''}`}
+                onClick={() => handleNav(item.id)}
+              >
+                {item.label}
+              </button>
+            )
+          })}
         </nav>
       </aside>
     </>
