@@ -59,6 +59,11 @@ export default function App() {
     })
   }, [])
 
+  // When navigating to a new page, present from the top (reset scroll)
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [view])
+
   return (
     <div className="app">
       <Header
