@@ -23,7 +23,9 @@ export function Header({ onMenuClick, menuExpanded = false }: HeaderProps) {
         <h1>Brad Meraly</h1>
         <p>Snowboard Instructor · Whistler Blackcomb</p>
       </div>
-      <div className="app-header-spacer" aria-hidden />
+      <div className="app-header-profile" aria-hidden>
+        <img src="/profile.png" alt="" width={40} height={40} />
+      </div>
     </header>
   )
 }

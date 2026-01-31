@@ -75,9 +75,21 @@
   line-height: 1.2;
 }
 
-.app-header-spacer {
+.app-header-profile {
   width: 44px;
+  height: 44px;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Footer – build info at bottom */
