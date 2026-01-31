@@ -16,7 +16,36 @@
 .casi-subtitle {
   font-size: 0.9rem;
   color: var(--muted);
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.casi-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.casi-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.casi-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.casi-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
 }
 
 .casi-section {
@@ -58,10 +87,59 @@
   color: #0f172a;
 }
 
+.casi-section-content {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.casi-section-content .casi-card-list {
+  padding: 0 0 0 1rem;
+}
+
+.casi-section-content .casi-card-list.casi-numbered {
+  padding-left: 1.5rem;
+}
+
+.casi-section-content .casi-tip {
+  margin: 0.75rem 0 0;
+}
+
+.casi-section-content .casi-stages {
+  padding: 0;
+  background: transparent;
+}
+
+.casi-diagram-wrap {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.casi-diagram {
+  width: 100%;
+  max-width: min(320px, 85vw);
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+
 .casi-card-list {
   list-style: none;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.casi-card-list.casi-numbered {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.casi-card-list.casi-numbered li {
+  border-left: none;
+  padding-left: 0.35rem;
 }
 
 .casi-card-list li {
@@ -110,13 +188,40 @@
 .casi-stage {
   padding: 0.75rem 1rem;
   font-size: 0.875rem;
-  line-height: 1.4;
+  line-height: 1.45;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   color: #0f172a;
 }
 
 .casi-stage:last-child {
   border-bottom: none;
+}
+
+.casi-stage ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.25rem;
+  background: transparent;
+}
+
+.casi-stage ul li {
+  margin-bottom: 0.25rem;
+  border-left: none;
+  padding-left: 0;
+  font-size: 0.85rem;
+  opacity: 0.95;
+}
+
+.casi-section .casi-block ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+  background: transparent;
+}
+
+.casi-section .casi-block ul li {
+  margin-bottom: 0.25rem;
+  border-left: none;
+  padding-left: 0;
+  font-size: 0.875rem;
 }
 
 /* Section accent colors – easy to scan on the mountain */
