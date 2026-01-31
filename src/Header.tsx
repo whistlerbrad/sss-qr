@@ -1,9 +1,10 @@
 interface HeaderProps {
   onMenuClick?: () => void
+  onProfileClick?: () => void
   menuExpanded?: boolean
 }
 
-export function Header({ onMenuClick, menuExpanded = false }: HeaderProps) {
+export function Header({ onMenuClick, onProfileClick, menuExpanded = false }: HeaderProps) {
   return (
     <header className="app-header">
       <button
@@ -23,9 +24,14 @@ export function Header({ onMenuClick, menuExpanded = false }: HeaderProps) {
         <h1>Brad Meraly</h1>
         <p>Snowboard Instructor · Whistler Blackcomb</p>
       </div>
-      <div className="app-header-profile" aria-hidden>
+      <button
+        type="button"
+        className="app-header-profile"
+        onClick={onProfileClick}
+        aria-label="Go to QR codes"
+      >
         <img src="/profile.png" alt="" width={40} height={40} />
-      </div>
+      </button>
     </header>
   )
 }

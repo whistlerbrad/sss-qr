@@ -82,6 +82,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.app-header-profile:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.app-header-profile:active {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .app-header-profile img {
@@ -116,35 +129,51 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* Full-width slideshow – grows to fill space above footer */
+/* Full-width slideshow – native scroll-snap for smooth iOS touch */
 .slideshow-wrap {
   flex: 1;
   min-height: 0;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  overflow: hidden;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.slideshow-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.slideshow-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .slideshow-track {
   display: flex;
-  width: 200vw;
-  transition: transform 0.3s ease-out;
+  height: 100%;
   user-select: none;
-  touch-action: pan-y;
-  will-change: transform;
 }
 
-.slideshow-track > * {
-  flex: 0 0 100vw;
-  width: 100vw;
-  min-width: 100vw;
+.slideshow-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideshow-slide .qr-section {
+  flex: 1;
+  min-height: 0;
 }
 
 .slideshow-dots {
