@@ -6,8 +6,11 @@
   margin: 0 auto;
 }
 
-/* App header – bar with hamburger and title */
+/* App header – sticky bar with hamburger and title */
 .app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   align-items: center;
   gap: 0.75rem;
