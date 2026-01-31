@@ -1,0 +1,326 @@
+/* Alpine Groups 101 — operational guide + terrain tables */
+.alpine-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.alpine-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.alpine-summary {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.alpine-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alpine-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.alpine-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.alpine-quicklinks a:active {
+  background: rgba(71, 85, 105, 0.35);
+  color: #94a3b8;
+}
+
+.alpine-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.alpine-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #475569 0%, #334155 100%);
+}
+
+.alpine-section.alpine-highlight h2 {
+  background: linear-gradient(135deg, #0e7490 0%, #155e75 100%);
+}
+
+.alpine-section > p,
+.alpine-section > ul {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.alpine-section > ul {
+  padding-left: 1.5rem;
+}
+
+.alpine-section > ul li {
+  margin-bottom: 0.4rem;
+}
+
+.alpine-section > ul li:last-child {
+  margin-bottom: 0;
+}
+
+.alpine-caps {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #b91c1c;
+}
+
+.alpine-block {
+  padding: 0.65rem 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.alpine-block h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: #334155;
+}
+
+.alpine-block p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Terrain section */
+.alpine-terrain h2 {
+  background: linear-gradient(135deg, #0f766e 0%, #115e59 100%);
+}
+
+.alpine-note {
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #475569;
+  background: #f1f5f9;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.alpine-note-inline {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.alpine-level {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.alpine-level:first-of-type {
+  border-top: none;
+}
+
+.alpine-level h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.alpine-tables {
+  padding: 0.5rem 0;
+}
+
+.alpine-table-wrap {
+  margin: 0 0 0.75rem;
+  padding: 0 0.75rem;
+}
+
+.alpine-table-wrap:last-child {
+  margin-bottom: 0;
+}
+
+.alpine-table-wrap h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: #475569;
+}
+
+.alpine-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.alpine-table th,
+.alpine-table td {
+  padding: 0.5rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #e2e8f0;
+}
+
+.alpine-table th {
+  font-weight: 600;
+  background: #f8fafc;
+  color: #334155;
+  white-space: nowrap;
+}
+
+.alpine-table td {
+  color: #0f172a;
+}
+
+/* Allow horizontal scroll on small screens for wide tables */
+.alpine-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.alpine-table {
+  min-width: 280px;
+}
+
+/* Contacts — card list with tappable phone/email links */
+.alpine-contacts-list {
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+
+.alpine-contact-card {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.alpine-contact-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.alpine-contact-card h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #1e293b;
+}
+
+.alpine-contact-card p {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.alpine-contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.alpine-contact-card a {
+  color: #0369a1;
+  text-decoration: none;
+}
+
+.alpine-contact-card a:hover {
+  text-decoration: underline;
+}
+
+.alpine-contact-card a:active {
+  color: #0284c7;
+}
+
+.alpine-contact-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-left: 0.25rem;
+}
+
+/* Skill development — 3 columns, stack on narrow */
+.alpine-skill-dev h2 {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.alpine-skill-level {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 0;
+}
+
+.alpine-skill-level:first-of-type {
+  border-top: none;
+}
+
+.alpine-skill-level h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  padding: 0 0.75rem;
+  color: #1e293b;
+}
+
+.alpine-skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  padding: 0 0.75rem;
+}
+
+@media (max-width: 520px) {
+  .alpine-skill-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.alpine-skill-col {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.alpine-skill-col h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #475569;
+}
+
+.alpine-skill-col ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.alpine-skill-col li {
+  margin-bottom: 0.25rem;
+}
+
+.alpine-skill-col li:last-child {
+  margin-bottom: 0;
+}

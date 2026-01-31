@@ -1,0 +1,139 @@
+/* Same layout as Lesson Plans & Teaching Scripts — easy to read on the hill */
+.balance-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.balance-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.balance-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.balance-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.balance-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.balance-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.balance-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+}
+
+.balance-tactic {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.balance-tactic h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+
+.balance-block {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.balance-block:last-child {
+  border-bottom: none;
+}
+
+.balance-block h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #0369a1;
+}
+
+.balance-block p,
+.balance-block ul,
+.balance-block ol {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.balance-block ul,
+.balance-block ol {
+  padding-left: 1.25rem;
+}
+
+.balance-block li {
+  margin-bottom: 0.35rem;
+}
+
+.balance-block li:last-child {
+  margin-bottom: 0;
+}
+
+.balance-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.balance-checklist li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.balance-checklist li.yes::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: 700;
+}
+
+.balance-checklist li.no::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.balance-checklist li:last-child {
+  margin-bottom: 0;
+}

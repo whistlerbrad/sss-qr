@@ -1,0 +1,124 @@
+/* Same layout and structure as CASI Study page */
+.lesson-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.lesson-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.lesson-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.lesson-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.lesson-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.lesson-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: inherit;
+}
+
+.lesson-section h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.lesson-blocks {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.lesson-tactic {
+  padding: 0.85rem 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.lesson-tactic:last-child .lesson-block:last-child {
+  border-bottom: none;
+}
+
+.lesson-block {
+  padding: 0 0 0.75rem;
+  border-bottom: none;
+}
+
+.lesson-tactic .lesson-block {
+  margin-bottom: 0;
+}
+
+.lesson-tactic .lesson-block:last-child {
+  padding-bottom: 0.85rem;
+}
+
+.lesson-block p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.lesson-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.lesson-block ul li {
+  margin-bottom: 0.4rem;
+}
+
+.lesson-block ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Section accent colors – match CASI Study style */
+.lesson-balance h2 { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); }
+.lesson-balance .lesson-tactic h3 { color: #0284c7; }
+.lesson-balance .lesson-block h4 { color: #0369a1; }
+
+.lesson-pivot h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+.lesson-pivot .lesson-tactic h3 { color: #047857; }
+.lesson-pivot .lesson-block h4 { color: #065f46; }
+
+.lesson-edging h2 { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
+.lesson-edging .lesson-tactic h3 { color: #6d28d9; }
+.lesson-edging .lesson-block h4 { color: #5b21b6; }
+
+.lesson-pressure h2 { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+.lesson-pressure .lesson-tactic h3 { color: #b45309; }
+.lesson-pressure .lesson-block h4 { color: #92400e; }
+
+.lesson-timing h2 { background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); }
+.lesson-timing .lesson-tactic h3 { color: #0e7490; }
+.lesson-timing .lesson-block h4 { color: #155e75; }

@@ -1,0 +1,139 @@
+/* Same layout as Position & Balance — Pivot (green) accent */
+.pivot-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.pivot-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.pivot-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.pivot-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pivot-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.pivot-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.pivot-quicklinks a:active {
+  background: rgba(5, 150, 105, 0.25);
+  color: #6ee7b7;
+}
+
+.pivot-tactic {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.pivot-tactic h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.pivot-block {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.pivot-block:last-child {
+  border-bottom: none;
+}
+
+.pivot-block h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #065f46;
+}
+
+.pivot-block p,
+.pivot-block ul,
+.pivot-block ol {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.pivot-block ul,
+.pivot-block ol {
+  padding-left: 1.25rem;
+}
+
+.pivot-block li {
+  margin-bottom: 0.35rem;
+}
+
+.pivot-block li:last-child {
+  margin-bottom: 0;
+}
+
+.pivot-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pivot-checklist li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.pivot-checklist li.yes::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: 700;
+}
+
+.pivot-checklist li.no::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.pivot-checklist li:last-child {
+  margin-bottom: 0;
+}

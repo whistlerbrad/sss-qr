@@ -1,0 +1,139 @@
+/* Same layout as Position & Balance — Timing (cyan/teal) accent */
+.timing-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.timing-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.timing-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.timing-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timing-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.timing-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.timing-quicklinks a:active {
+  background: rgba(8, 145, 178, 0.25);
+  color: #67e8f9;
+}
+
+.timing-tactic {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.timing-tactic h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.timing-block {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.timing-block:last-child {
+  border-bottom: none;
+}
+
+.timing-block h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+  color: #155e75;
+}
+
+.timing-block p,
+.timing-block ul,
+.timing-block ol {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.timing-block ul,
+.timing-block ol {
+  padding-left: 1.25rem;
+}
+
+.timing-block li {
+  margin-bottom: 0.35rem;
+}
+
+.timing-block li:last-child {
+  margin-bottom: 0;
+}
+
+.timing-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timing-checklist li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+.timing-checklist li.yes::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #059669;
+  font-weight: 700;
+}
+
+.timing-checklist li.no::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.timing-checklist li:last-child {
+  margin-bottom: 0;
+}

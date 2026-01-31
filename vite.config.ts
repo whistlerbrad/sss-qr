@@ -14,8 +14,8 @@ export default defineConfig({
       registerType: 'autoUpdate', // prompt for update when new SW available
       includeAssets: ['favicon.svg', 'WhatsApp-Brad.jpg', 'BuyMeACoffee-whistlerpeak.png'],
       manifest: {
-        name: 'SSS QR – Instructor',
-        short_name: 'SSS QR',
+        name: 'Brad Meraly',
+        short_name: 'Brad Meraly',
         description: 'WhatsApp contact & Buy Me a Coffee – snowboard instructor',
         theme_color: '#0f172a',
         background_color: '#0f172a',

@@ -53,7 +53,7 @@ Output is in `dist/`. The build also writes `dist/version.json` with the current
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/YOUR_USERNAME/sss-qr.git
+   git remote add origin https://github.com/whistlerbrad/sss-qr.git
    git push -u origin main
    ```
 

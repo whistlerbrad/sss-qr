@@ -1,0 +1,119 @@
+/* Same layout as Lesson Plans & CASI Study — easy to read on the hill */
+.scripts-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.scripts-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.scripts-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.scripts-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.scripts-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.scripts-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: inherit;
+}
+
+.scripts-section h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.scripts-blocks {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.scripts-tactic {
+  padding: 0.85rem 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.scripts-tactic:last-child .scripts-block:last-child {
+  border-bottom: none;
+}
+
+.scripts-block {
+  padding: 0 0 0.75rem;
+  border-bottom: none;
+}
+
+.scripts-tactic .scripts-block {
+  margin-bottom: 0.5rem;
+}
+
+.scripts-tactic .scripts-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0.85rem;
+}
+
+.scripts-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #0f172a;
+}
+
+.scripts-block ul li {
+  margin-bottom: 0.4rem;
+}
+
+.scripts-block ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Section accent colors — match other reference pages */
+.scripts-balance h2 { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); }
+.scripts-balance .scripts-tactic h3 { color: #0284c7; }
+.scripts-balance .scripts-block h4 { color: #0369a1; }
+
+.scripts-pivot h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+.scripts-pivot .scripts-tactic h3 { color: #047857; }
+.scripts-pivot .scripts-block h4 { color: #065f46; }
+
+.scripts-edging h2 { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
+.scripts-edging .scripts-tactic h3 { color: #6d28d9; }
+.scripts-edging .scripts-block h4 { color: #5b21b6; }
+
+.scripts-pressure h2 { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+.scripts-pressure .scripts-tactic h3 { color: #b45309; }
+.scripts-pressure .scripts-block h4 { color: #92400e; }
+
+.scripts-timing h2 { background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); }
+.scripts-timing .scripts-tactic h3 { color: #0e7490; }
+.scripts-timing .scripts-block h4 { color: #155e75; }

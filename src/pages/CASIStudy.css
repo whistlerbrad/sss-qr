@@ -1,0 +1,142 @@
+.casi-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.casi-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.casi-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.casi-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.casi-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.casi-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: inherit;
+}
+
+.casi-lead {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+.casi-section ul,
+.casi-section .casi-block,
+.casi-stages,
+.casi-card-list {
+  margin: 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.casi-card-list {
+  list-style: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.casi-card-list li {
+  margin-bottom: 0.65rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid currentColor;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.casi-card-list li:last-child {
+  margin-bottom: 0;
+}
+
+.casi-tip {
+  margin: 0.75rem 1rem 0;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+
+.casi-block {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.casi-block:last-child {
+  border-bottom: none;
+}
+
+.casi-block p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.casi-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.casi-stage {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  color: #0f172a;
+}
+
+.casi-stage:last-child {
+  border-bottom: none;
+}
+
+/* Section accent colors – easy to scan on the mountain */
+.casi-skills h2 { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); }
+.casi-skills .casi-card-list li { border-left-color: #0ea5e9; }
+
+.casi-core h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+.casi-core .casi-card-list li { border-left-color: #059669; }
+
+.casi-advanced h2 { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
+.casi-advanced .casi-card-list li { border-left-color: #7c3aed; }
+
+.casi-quickride h2 { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+.casi-quickride .casi-stage strong { color: #b45309; }
+
+.casi-risk h2 { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); }
+.casi-risk .casi-block h3 { color: #b91c1c; }
+
+.casi-teaching h2 { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); }
+.casi-teaching .casi-block h3 { color: #1d4ed8; }
+
+.casi-analysis h2 { background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); }
+.casi-analysis .casi-block h3 { color: #0e7490; }
