@@ -28,7 +28,7 @@ export function Header({ onMenuClick, onProfileClick, menuExpanded = false }: He
         type="button"
         className="app-header-profile"
         onClick={onProfileClick}
-        aria-label="Go to QR codes"
+        aria-label="Scroll to top"
       >
         <img src="/profile.png" alt="" width={40} height={40} />
       </button>

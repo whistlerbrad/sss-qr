@@ -69,7 +69,7 @@ export default function App() {
     <div className="app">
       <Header
         onMenuClick={() => setNavOpen(true)}
-        onProfileClick={() => { setView('home'); setNavOpen(false) }}
+        onProfileClick={() => { window.scrollTo(0, 0); setNavOpen(false) }}
         menuExpanded={navOpen}
       />
 

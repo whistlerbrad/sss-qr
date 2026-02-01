@@ -17,7 +17,37 @@
 .lesson-subtitle {
   font-size: 0.9rem;
   color: var(--muted);
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.lesson-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lesson-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.lesson-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.lesson-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
 }
 
 .lesson-section {

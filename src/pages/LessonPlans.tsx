@@ -6,7 +6,15 @@ export function LessonPlans() {
       <h1 className="lesson-title">Lesson Plans by Skill</h1>
       <p className="lesson-subtitle">Quick reference for on-hill teaching</p>
 
-      <section className="lesson-section lesson-balance">
+      <nav className="lesson-quicklinks" aria-label="Jump to section">
+        <a href="#position-balance">1. Position &amp; Balance</a>
+        <a href="#pivot">2. Pivot (Steering)</a>
+        <a href="#edging">3. Edging</a>
+        <a href="#pressure">4. Pressure</a>
+        <a href="#timing-coordination">5. Timing &amp; Coordination</a>
+      </nav>
+
+      <section id="position-balance" className="lesson-section lesson-balance">
         <h2>1. Position &amp; Balance</h2>
         <div className="lesson-blocks">
           <div className="lesson-tactic">
@@ -45,7 +53,7 @@ export function LessonPlans() {
         </div>
       </section>
 
-      <section className="lesson-section lesson-pivot">
+      <section id="pivot" className="lesson-section lesson-pivot">
         <h2>2. Pivot (Steering)</h2>
         <div className="lesson-blocks">
           <div className="lesson-tactic">
@@ -84,7 +92,7 @@ export function LessonPlans() {
         </div>
       </section>
 
-      <section className="lesson-section lesson-edging">
+      <section id="edging" className="lesson-section lesson-edging">
         <h2>3. Edging</h2>
         <div className="lesson-blocks">
           <div className="lesson-tactic">
@@ -123,7 +131,7 @@ export function LessonPlans() {
         </div>
       </section>
 
-      <section className="lesson-section lesson-pressure">
+      <section id="pressure" className="lesson-section lesson-pressure">
         <h2>4. Pressure</h2>
         <div className="lesson-blocks">
           <div className="lesson-tactic">
@@ -158,7 +166,7 @@ export function LessonPlans() {
         </div>
       </section>
 
-      <section className="lesson-section lesson-timing">
+      <section id="timing-coordination" className="lesson-section lesson-timing">
         <h2>5. Timing &amp; Coordination</h2>
         <div className="lesson-blocks">
           <div className="lesson-tactic">
