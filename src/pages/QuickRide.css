@@ -1,0 +1,141 @@
+/* QuickRide System — 5-step beginner progression (from CASI QuickRide PDF) */
+.quickride-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.quickride-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.quickride-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 0.25rem;
+}
+
+.quickride-credit {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.quickride-credit a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.quickride-credit a:hover {
+  text-decoration: underline;
+}
+
+.quickride-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quickride-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.quickride-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.quickride-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+}
+
+.quickride-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.quickride-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.quickride-section-content {
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.97);
+  color: #0f172a;
+}
+
+.quickride-block {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.quickride-block:last-child {
+  border-bottom: none;
+}
+
+.quickride-block h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  color: #334155;
+}
+
+.quickride-block p,
+.quickride-block ul {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.quickride-block ul {
+  padding-left: 1.25rem;
+}
+
+.quickride-block li {
+  margin-bottom: 0.25rem;
+}
+
+.quickride-block li:last-child {
+  margin-bottom: 0;
+}
+
+/* Step accent colours (optional — match CASI skill colours if desired) */
+.quickride-basics h2 { background: linear-gradient(135deg, #0e7490 0%, #155e75 100%); }
+.quickride-sliding h2 { background: linear-gradient(135deg, #0369a1 0%, #075985 100%); }
+.quickride-control h2 { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); }
+.quickride-turning h2 { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
+.quickride-flow h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+
+.quickride-tip {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 1.5rem 0 0;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+}

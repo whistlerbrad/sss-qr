@@ -1,0 +1,231 @@
+/* QuickRide Exercises — detailed exercise reference (from CASI QuickRide PDF) */
+.qre-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.qre-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.qre-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.qre-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.qre-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.qre-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.qre-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+}
+
+.qre-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.qre-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.qre-section-content {
+  background: #fff;
+  color: #0f172a;
+  border-radius: 0 0 var(--radius) var(--radius);
+  overflow: hidden;
+}
+
+.qre-step-goal {
+  margin: 0;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: #334155;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.qre-exercise {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.qre-exercise:last-child {
+  border-bottom: none;
+}
+
+.qre-exercise h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.6rem 1rem 0.35rem;
+  color: #1e293b;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.qre-exercise:first-child h3 {
+  border-top: none;
+}
+
+.qre-block {
+  padding: 0.4rem 1rem 0.75rem;
+  border-bottom: none;
+}
+
+.qre-block h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.qre-block p,
+.qre-block ul {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.qre-block ul {
+  padding-left: 1.25rem;
+}
+
+.qre-block li {
+  margin-bottom: 0.2rem;
+}
+
+.qre-block li:last-child {
+  margin-bottom: 0;
+}
+
+.qre-block.qre-keywords {
+  background: rgba(0, 0, 0, 0.03);
+  margin: 0 1rem 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+}
+
+.qre-block.qre-keywords h4 {
+  margin-bottom: 0.35rem;
+}
+
+/* How sections — bullet list for readability */
+.qre-how-list {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.35rem 0 0;
+}
+
+.qre-how-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.5;
+}
+
+.qre-how-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Other tactics — list style (Basics, Sliding, Control), no extra padded wrapper */
+.qre-block-tactics {
+  /* Same padding as other blocks; no background/margin/border wrapper */
+}
+
+.qre-tactics-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.35rem 0 0;
+}
+
+.qre-tactics-list li {
+  padding: 0.4rem 0 0.4rem 0.75rem;
+  margin-bottom: 0.35rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  line-height: 1.45;
+}
+
+.qre-tactics-list li:last-child {
+  margin-bottom: 0;
+}
+
+.qre-tactics-list li strong {
+  color: #334155;
+}
+
+/* Other tactics — card style (Turning, Flow), no extra padding */
+.qre-tactics {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.qre-tactic-card {
+  padding: 0.75rem 1rem;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: var(--radius);
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+}
+
+.qre-tactic-card h4 {
+  margin-bottom: 0.4rem;
+  color: #1e293b;
+}
+
+.qre-tactic-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Step accent colours (match QuickRide page) */
+.qre-basics h2 { background: linear-gradient(135deg, #0e7490 0%, #155e75 100%); }
+.qre-sliding h2 { background: linear-gradient(135deg, #0369a1 0%, #075985 100%); }
+.qre-control h2 { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); }
+.qre-turning h2 { background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%); }
+.qre-flow h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+
+.qre-tip {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin: 1.5rem 0 0;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--accent);
+}

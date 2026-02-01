@@ -5,6 +5,8 @@ import { QRSection } from './QRSection'
 import { Header } from './Header'
 import { NavDrawer, type NavView } from './NavDrawer'
 import { CASIStudy } from './pages/CASIStudy'
+import { QuickRide } from './pages/QuickRide'
+import { QuickRideExercises } from './pages/QuickRideExercises'
 import { LessonPlans } from './pages/LessonPlans'
 import { TeachingScripts } from './pages/TeachingScripts'
 import { PositionBalance } from './pages/PositionBalance'
@@ -122,6 +124,18 @@ export default function App() {
       {view === 'casi' && (
         <main className="app-main-content">
           <CASIStudy />
+        </main>
+      )}
+
+      {view === 'quickride' && (
+        <main className="app-main-content">
+          <QuickRide />
+        </main>
+      )}
+
+      {view === 'quickrideexercises' && (
+        <main className="app-main-content">
+          <QuickRideExercises />
         </main>
       )}
 

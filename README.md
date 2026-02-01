@@ -79,6 +79,11 @@ Each new deploy gets a new build ID. When you open the PWA and a newer build is 
 - **vite-plugin-pwa** for service worker and manifest
 - **Netlify** for hosting and redirects (SPA)
 
+## Pages not in the menu
+
+- **Lesson Plans by Skill** – The page exists at `src/pages/LessonPlans.tsx` (and `LessonPlans.css`) and is still routed in the app; it’s just not shown in the navigation. To add it back to the menu, add this item to `NAV_ITEMS` in `src/NavDrawer.tsx` (e.g. after CASI Study Guide):  
+  `{ type: 'link', id: 'lessonplans', label: 'Lesson Plans by Skill' }`
+
 ## Future ideas
 
 - Lesson plans and tactics (e.g. a simple reference you can open before or during a lesson).

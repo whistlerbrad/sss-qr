@@ -6,11 +6,23 @@ export function TeachingScripts() {
       <h1 className="scripts-title">On-Hill Teaching Scripts</h1>
       <p className="scripts-subtitle">5 Skills Concept — Demo, Look For, Cues</p>
 
-      <section className="scripts-section scripts-balance">
+      <nav className="scripts-quicklinks" aria-label="Jump to section">
+        <a href="#position-balance">1. Position &amp; Balance</a>
+        <a href="#pivot">2. Pivot (Steering)</a>
+        <a href="#edging">3. Edging</a>
+        <a href="#pressure">4. Pressure</a>
+        <a href="#timing-coordination">5. Timing &amp; Coordination</a>
+      </nav>
+
+      <section id="position-balance" className="scripts-section scripts-balance">
         <h2>1. Position &amp; Balance</h2>
         <div className="scripts-blocks">
           <div className="scripts-tactic">
             <h3>Butter Yoga</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Explore limits of balance in static stance.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
@@ -62,6 +74,10 @@ export function TeachingScripts() {
           <div className="scripts-tactic">
             <h3>Static Jump / “T” Stance</h3>
             <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Reinforce centred landing.</p>
+            </div>
+            <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
                 <li>Flex, extend, and hop lightly in place.</li>
@@ -88,7 +104,7 @@ export function TeachingScripts() {
         </div>
       </section>
 
-      <section className="scripts-section scripts-pivot">
+      <section id="pivot" className="scripts-section scripts-pivot">
         <h2>2. Pivot (Steering)</h2>
         <div className="scripts-blocks">
           <div className="scripts-tactic">
@@ -143,6 +159,10 @@ export function TeachingScripts() {
           <div className="scripts-tactic">
             <h3>Sliding 360s</h3>
             <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Explore full rotation while sliding.</p>
+            </div>
+            <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
                 <li>On mellow slope, rotate head → shoulders → hips → knees → board.</li>
@@ -167,7 +187,7 @@ export function TeachingScripts() {
         </div>
       </section>
 
-      <section className="scripts-section scripts-edging">
+      <section id="edging" className="scripts-section scripts-edging">
         <h2>3. Edging</h2>
         <div className="scripts-blocks">
           <div className="scripts-tactic">
@@ -197,6 +217,10 @@ export function TeachingScripts() {
           </div>
           <div className="scripts-tactic">
             <h3>Side-Slipping 180 Jumps</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Explore edge-to-edge hops.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
@@ -246,11 +270,15 @@ export function TeachingScripts() {
         </div>
       </section>
 
-      <section className="scripts-section scripts-pressure">
+      <section id="pressure" className="scripts-section scripts-pressure">
         <h2>4. Pressure</h2>
         <div className="scripts-blocks">
           <div className="scripts-tactic">
             <h3>Flatland Manoeuvres / Butters</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Explore pressure distribution nose/tail.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
@@ -275,6 +303,10 @@ export function TeachingScripts() {
           </div>
           <div className="scripts-tactic">
             <h3>Motor Boat</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Manage forces through alignment &amp; pressure.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
@@ -321,15 +353,23 @@ export function TeachingScripts() {
                 <li>“Let the board rotate under you, not behind you.”</li>
               </ul>
             </div>
+            <div className="scripts-block">
+              <h4>Variation</h4>
+              <p>Maintain centred pressure through full rotation, focusing on equal distribution fore/aft.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="scripts-section scripts-timing">
+      <section id="timing-coordination" className="scripts-section scripts-timing">
         <h2>5. Timing &amp; Coordination</h2>
         <div className="scripts-blocks">
           <div className="scripts-tactic">
             <h3>Fish Turns / Roller Coaster Turns</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Link movements smoothly.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
@@ -355,6 +395,10 @@ export function TeachingScripts() {
           <div className="scripts-tactic">
             <h3>Rail to Rail (Coordination Focus)</h3>
             <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Coordinate edge changes.</p>
+            </div>
+            <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
                 <li>Roll toe → heel → toe edges smoothly.</li>
@@ -378,6 +422,10 @@ export function TeachingScripts() {
           </div>
           <div className="scripts-tactic">
             <h3>Side-Slipping 180 Jumps (Coordination Focus)</h3>
+            <div className="scripts-block">
+              <h4>Goal</h4>
+              <p>Harmonize flexion, extension, rotation, landing.</p>
+            </div>
             <div className="scripts-block">
               <h4>Demo</h4>
               <ul>
