@@ -56,6 +56,7 @@
   box-shadow: var(--shadow);
   background: rgba(255, 255, 255, 0.97);
   color: #0f172a;
+  scroll-margin-top: 4rem;
 }
 
 .alpine-section h2 {
@@ -139,6 +140,7 @@
 
 .alpine-level {
   border-top: 1px solid rgba(0, 0, 0, 0.08);
+  scroll-margin-top: 4rem;
 }
 
 .alpine-level:first-of-type {

@@ -130,6 +130,8 @@
   min-height: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  /* Keep section headings visible when using quick links (anchor scroll) */
+  scroll-padding-top: 4rem;
 }
 
 /* Full-width slideshow – native scroll-snap for smooth iOS touch */
