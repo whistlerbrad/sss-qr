@@ -18,6 +18,7 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'link', id: 'alpinegroups101', label: 'Alpine Groups 101' },
   { type: 'separator' },
   { type: 'link', id: 'casi', label: 'CASI Study Guide' },
+  { type: 'link', id: 'lessonplans', label: 'Lesson Plans' },
   { type: 'link', id: 'teachingscripts', label: 'Teaching Scripts' },
   { type: 'link', id: 'positionbalance', label: 'Position & Balance' },
   { type: 'link', id: 'pivotsteering', label: 'Pivot (Steering)' },

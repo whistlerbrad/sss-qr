@@ -111,20 +111,39 @@
   background: transparent;
 }
 
-.casi-diagram-wrap {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.97);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.casi-skills-card {
+  padding: 1rem 1.25rem;
+  background: #fff;
+  color: #0f172a;
 }
 
-.casi-diagram {
-  width: 100%;
-  max-width: min(320px, 85vw);
-  height: auto;
-  border-radius: 0.5rem;
-  display: block;
+.casi-skills-lead {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.casi-skills-list {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.casi-skills-list li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.35rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-left: none;
+}
+
+.casi-skills-list li:last-child {
+  margin-bottom: 0;
+}
+
+.casi-skills-list li strong {
+  color: #0f172a;
 }
 
 .casi-card-list {
@@ -227,7 +246,7 @@
 
 /* Section accent colors – easy to scan on the mountain */
 .casi-skills h2 { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); }
-.casi-skills .casi-card-list li { border-left-color: #0ea5e9; }
+.casi-skills .casi-skills-list li { border-left: 3px solid #0ea5e9; padding-left: 0.5rem; margin-left: 0.25rem; }
 
 .casi-core h2 { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
 .casi-core .casi-card-list li { border-left-color: #059669; }

@@ -16,17 +16,17 @@ export function CASIStudy() {
       </nav>
 
       <section id="skills-concept" className="casi-section casi-skills">
-        <h2>Skills Concept (5 movement-based skills)</h2>
-        <div className="casi-diagram-wrap">
-          <img src="/casi-skills-diagram.jpg" alt="Position & Balance encompassing Pivot, Edging, Pressure with Timing & Coordination at the centre" className="casi-diagram" width={400} height={400} />
+        <h2>Skills Concept — 5 movement-based skills</h2>
+        <div className="casi-skills-card">
+          <p className="casi-skills-lead">The five skills that underpin snowboarding performance:</p>
+          <ol className="casi-skills-list">
+            <li><strong>Position &amp; Balance</strong> — Dynamic balance via continuous muscular activity to keep the COM&apos;s resultant force through the BOS (board). Stable, adaptable stance.</li>
+            <li><strong>Pivot (Steering)</strong> — Rotate from lower body to create steering angle (skidded turns); no steering angle in pure carving; lower edge angles allow greater steering.</li>
+            <li><strong>Edging</strong> — Change of direction always involves edging. Use ankle/knee/hip to vary <strong>edge angle</strong> (base-to-snow). Edge control = manipulating edge angle.</li>
+            <li><strong>Pressure</strong> — Sensory skill—manage forces with lower-joint movements; adjust via fore/aft positioning, leg flex/extend (one or both), edge angle, and steering. Defines expert performance.</li>
+            <li><strong>Timing &amp; Coordination</strong> — Harmonize movements at the right moment/duration and combine them into a common effort—crucial beyond beginner.</li>
+          </ol>
         </div>
-        <ul className="casi-card-list">
-          <li><strong>Position &amp; Balance</strong> — Dynamic balance via continuous muscular activity to keep the COM&apos;s resultant force through the BOS (board). Stable, adaptable stance.</li>
-          <li><strong>Pivot (Steering)</strong> — Rotate from lower body to create steering angle (skidded turns); no steering angle in pure carving; lower edge angles allow greater steering.</li>
-          <li><strong>Edging</strong> — Change of direction always involves edging. Use ankle/knee/hip to vary <strong>edge angle</strong> (base-to-snow). Edge control = manipulating edge angle.</li>
-          <li><strong>Pressure</strong> — Sensory skill—manage forces with lower-joint movements; adjust via fore/aft positioning, leg flex/extend (one or both), edge angle, and steering. Defines expert performance.</li>
-          <li><strong>Timing &amp; Coordination</strong> — Harmonize movements at the right moment/duration and combine them into a common effort—crucial beyond beginner.</li>
-        </ul>
       </section>
 
       <section id="core-competencies" className="casi-section casi-core">
