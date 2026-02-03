@@ -17,7 +17,6 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'link', id: 'home', label: 'QR Codes' },
   { type: 'link', id: 'alpinegroups101', label: 'Alpine Groups 101' },
   { type: 'separator' },
-  { type: 'link', id: 'casi', label: 'CASI Study Guide' },
   { type: 'link', id: 'lessonplans', label: 'Lesson Plans' },
   { type: 'link', id: 'teachingscripts', label: 'Teaching Scripts' },
   { type: 'link', id: 'positionbalance', label: 'Position & Balance' },
@@ -28,6 +27,7 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'separator' },
   { type: 'link', id: 'quickride', label: 'QuickRide' },
   { type: 'link', id: 'quickrideexercises', label: 'QR Exercises' },
+  { type: 'link', id: 'casi', label: 'CASI Study Guide' },
   { type: 'separator' },
   { type: 'link', id: 'sssresources', label: 'SSS Resources' }
 ]
