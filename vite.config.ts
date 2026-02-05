@@ -12,7 +12,8 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate', // prompt for update when new SW available
-      includeAssets: ['favicon.svg', 'WhatsApp-Brad.jpg', 'BuyMeACoffee-whistlerpeak.png'],
+      injectRegister: null, // register SW only in App (not on student landing page)
+      includeAssets: ['favicon.svg', 'WhatsApp-Brad.jpg', 'BuyMeACoffee-whistlerpeak.png', 'StudentPageQR.png'],
       manifest: {
         name: 'Brad Meraly',
         short_name: 'Brad Meraly',

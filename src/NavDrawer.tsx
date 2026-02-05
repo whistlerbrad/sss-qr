@@ -1,6 +1,6 @@
 import './NavDrawer.css'
 
-export type NavView = 'home' | 'casi' | 'quickride' | 'quickrideexercises' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'alpinegroups101' | 'sssresources'
+export type NavView = 'home' | 'casi' | 'quickride' | 'quickrideexercises' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'alpinegroups101' | 'sssresources' | 'studentpage'
 
 interface NavDrawerProps {
   open: boolean
@@ -29,7 +29,8 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'link', id: 'quickrideexercises', label: 'QR Exercises' },
   { type: 'link', id: 'casi', label: 'CASI Study Guide' },
   { type: 'separator' },
-  { type: 'link', id: 'sssresources', label: 'SSS Resources' }
+  { type: 'link', id: 'sssresources', label: 'SSS Resources' },
+  { type: 'link', id: 'studentpage', label: 'Student page' }
 ]
 
 export function NavDrawer({ open, currentView, onClose, onNavigate }: NavDrawerProps) {

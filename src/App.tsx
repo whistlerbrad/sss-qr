@@ -1,5 +1,10 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import { useUpdateCheck } from './useUpdateCheck'
+
+// Register SW only when instructor app is shown (not on student landing page)
+if (import.meta.env.PROD) {
+  import('virtual:pwa-register').then(({ registerSW }) => registerSW())
+}
 import { UpdateModal } from './UpdateModal'
 import { QRSection } from './QRSection'
 import { Header } from './Header'
@@ -16,11 +21,13 @@ import { Pressure } from './pages/Pressure'
 import { TimingCoordination } from './pages/TimingCoordination'
 import { AlpineGroups101 } from './pages/AlpineGroups101'
 import { SSSResources } from './pages/SSSResources'
+import { StudentLanding } from './pages/StudentLanding'
 import './App.css'
 
 const WHATSAPP_IMAGE = '/WhatsApp-Brad.jpg'
 const BUYMEACOFFEE_IMAGE = '/BuyMeACoffee-whistlerpeak.png'
-const SLIDE_COUNT = 2
+const STUDENT_PAGE_QR = '/StudentPageQR.png'
+const SLIDE_COUNT = 3
 
 export default function App() {
   const [view, setView] = useState<NavView>('home')
@@ -71,7 +78,8 @@ export default function App() {
     <div className="app">
       <Header
         onMenuClick={() => setNavOpen(true)}
-        onProfileClick={() => { window.scrollTo(0, 0); setNavOpen(false) }}
+        onProfileClick={() => { setView('home'); setNavOpen(false) }}
+        onTitleClick={() => window.scrollTo(0, 0)}
         menuExpanded={navOpen}
       />
 
@@ -103,16 +111,24 @@ export default function App() {
                   imageAlt="Buy Me a Coffee QR code"
                 />
               </div>
+              <div className="slideshow-slide">
+                <QRSection
+                  title="Student page"
+                  description="Scan to open the student landing page—thank you, feedback link, and tip option."
+                  imageSrc={STUDENT_PAGE_QR}
+                  imageAlt="Student page QR code"
+                />
+              </div>
             </div>
           </div>
           <div className="slideshow-dots" role="tablist" aria-label="Slides">
-            {[0, 1].map((i) => (
+            {[0, 1, 2].map((i) => (
               <button
                 key={i}
                 type="button"
                 role="tab"
                 aria-selected={slideIndex === i}
-                aria-label={i === 0 ? 'WhatsApp QR' : 'Buy Me a Coffee QR'}
+                aria-label={i === 0 ? 'WhatsApp QR' : i === 1 ? 'Buy Me a Coffee QR' : 'Student page QR'}
                 className={`slideshow-dot ${slideIndex === i ? 'active' : ''}`}
                 onClick={() => goToSlide(i)}
               />
@@ -190,6 +206,12 @@ export default function App() {
       {view === 'sssresources' && (
         <main className="app-main-content">
           <SSSResources />
+        </main>
+      )}
+
+      {view === 'studentpage' && (
+        <main className="app-main-content">
+          <StudentLanding />
         </main>
       )}
 

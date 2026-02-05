@@ -61,6 +61,23 @@
 .app-header-title {
   flex: 1;
   min-width: 0;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  display: block;
+}
+
+.app-header-title:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.app-header-title:active {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .app-header-title h1 {
