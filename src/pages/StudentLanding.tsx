@@ -3,9 +3,27 @@ import './StudentLanding.css'
 const FEEDBACK_EMAIL = 'wbguestcommunication@vailresorts.com'
 const FEEDBACK_SUBJECT = 'Brad Meraly SB Instructor Adult Groups'
 const BUYMEACOFFEE_URL = 'https://buymeacoffee.com/whistlerpeak'
+const SHARE_URL = 'https://snowboard-instructor.netlify.app/brad-meraly'
 
 export function StudentLanding() {
   const feedbackMailto = `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(FEEDBACK_SUBJECT)}`
+
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Brad Meraly - Snowboard Instructor',
+          text: "Check out Brad's snowboard lesson landing page!",
+          url: SHARE_URL,
+        })
+      } catch (err) {
+        console.log('Error sharing', err)
+      }
+    } else {
+      navigator.clipboard.writeText(SHARE_URL)
+      alert('Link copied to clipboard!')
+    }
+  }
 
   return (
     <div className="student-landing">
@@ -52,6 +70,16 @@ export function StudentLanding() {
           </p>
           <p className="signature">— Brad</p>
         </footer>
+      </div>
+
+      <div className="student-landing-card student-card-share">
+        <h2 className="student-card-share-title">Save for later</h2>
+        <p className="student-card-share-text">
+          Want to keep this link or share it with your group?
+        </p>
+        <button type="button" onClick={handleShare} className="student-link student-link-share">
+          📤 Share this page
+        </button>
       </div>
     </div>
   )
