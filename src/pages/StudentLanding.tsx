@@ -5,7 +5,12 @@ const FEEDBACK_SUBJECT = 'Brad Meraly SB Instructor Adult Groups'
 const BUYMEACOFFEE_URL = 'https://buymeacoffee.com/whistlerpeak'
 const SHARE_URL = 'https://snowboard-instructor.netlify.app/brad-meraly'
 
-export function StudentLanding() {
+interface StudentLandingProps {
+  /** When true, show the "Save for later" share card (instructor app only). Student landing page uses false. */
+  showShareCard?: boolean
+}
+
+export function StudentLanding({ showShareCard = false }: StudentLandingProps) {
   const feedbackMailto = `mailto:${FEEDBACK_EMAIL}?subject=${encodeURIComponent(FEEDBACK_SUBJECT)}`
 
   const handleShare = async () => {
@@ -72,7 +77,7 @@ export function StudentLanding() {
         </footer>
       </div>
 
-      <div className="student-landing-card student-card-share">
+      <div className={`student-landing-card student-card-share${showShareCard ? ' student-card-share-visible' : ''}`}>
         <h2 className="student-card-share-title">Save for later</h2>
         <p className="student-card-share-text">
           Want to keep this link or share it with your group?

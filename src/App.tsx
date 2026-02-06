@@ -211,7 +211,7 @@ export default function App() {
 
       {view === 'studentpage' && (
         <main className="app-main-content">
-          <StudentLanding />
+          <StudentLanding showShareCard />
         </main>
       )}
 
