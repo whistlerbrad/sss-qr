@@ -24,11 +24,11 @@ export function QuickRideExercises() {
 
           <article id="basics-neutral-position" className="qre-exercise">
           <h3>The Neutral Position</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>An athletic stance common to most sports—stable and allows quick reaction.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-context">
             <h4>On the snowboard</h4>
             <p>Ready position with ankles, knees, and hip joints equally flexed; shoulders and hips square to the front foot; arms relaxed; head and eyes toward direction of travel; weight even between both feet.</p>
           </div>
@@ -45,15 +45,15 @@ export function QuickRideExercises() {
 
         <article id="basics-skating" className="qre-exercise">
           <h3>Skating</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Moving around on flat ground with one foot attached to the snowboard.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To get from point A to B and be mobile with the board attached.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>From neutral position, orient head and eyes toward the nose.</li>
@@ -84,15 +84,15 @@ export function QuickRideExercises() {
 
         <article id="basics-climbing-descending" className="qre-exercise">
           <h3>Climbing / Descending</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Moving up and down a slope with the snowboard across the fall line.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To negotiate varying sloped terrain with one foot attached.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How — Climbing</h4>
             <ul className="qre-how-list">
               <li>Front foot attached, facing up the slope; free foot uphill above the toeside.</li>
@@ -101,7 +101,7 @@ export function QuickRideExercises() {
               <li>Engage edge to prevent slipping back.</li>
             </ul>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How — Descending</h4>
             <ul className="qre-how-list">
               <li>Facing down the slope, free foot uphill.</li>
@@ -130,15 +130,15 @@ export function QuickRideExercises() {
 
           <article id="sliding-straight-running" className="qre-exercise">
           <h3>Straight Running</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Sliding down a slope with one foot attached to the snowboard.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To gain comfort and balance on the snowboard.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>After climbing a slight incline, turn so the nose points down the slope, base flat in the fall line.</li>
@@ -178,15 +178,15 @@ export function QuickRideExercises() {
 
           <article id="control-gas-pedal" className="qre-exercise">
           <h3>Introduction to Edging (Gas Pedal)</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Introduction to edging and speed control. Increased edge angle decreases speed; decreased edge angle increases speed.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To gain control over the snowboard and our speed.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>On flat terrain, lean slightly toward heel edge.</li>
@@ -266,15 +266,15 @@ export function QuickRideExercises() {
 
         <article id="control-pendulum" className="qre-exercise">
           <h3>Pendulum</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Moving side-to-side in a diagonal direction on the snowboard.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To control pressure distribution and side-to-side direction of travel.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>Begin on heel or toeside in a sideslip.</li>
@@ -308,15 +308,15 @@ export function QuickRideExercises() {
 
         <article id="control-power-pendulum" className="qre-exercise">
           <h3>Power Pendulum</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Moving side-to-side at higher speeds with more board control; key for learning to turn—allowing the board to pivot.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To use rotation to assist directional control.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>Start in a sideslip on heel or toeside.</li>
@@ -351,7 +351,7 @@ export function QuickRideExercises() {
           <div className="qre-block">
             <p><strong>Heelside turn:</strong> Starts on toeside edge, crosses fall line on flat base, finishes on heelside edge. <strong>Toeside turn:</strong> Starts on heelside edge, crosses fall line on flat base, finishes on toeside edge.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How — Heelside Turn</h4>
             <ul className="qre-how-list">
               <li>On toeside edge (facing uphill), traverse with slight pressure on lead foot, eyes in direction of travel.</li>
@@ -362,7 +362,7 @@ export function QuickRideExercises() {
               <li>On heel edge, flex lower joints to engage edge; look ahead, equalize weight; sideslip to slow.</li>
             </ul>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How — Toeside Turn</h4>
             <ul className="qre-how-list">
               <li>On heelside edge (facing downhill), traverse with slight pressure on lead foot, eyes forward.</li>
@@ -448,15 +448,15 @@ export function QuickRideExercises() {
 
         <article id="flow-novice-turns" className="qre-exercise">
           <h3>Novice Turns</h3>
-          <div className="qre-block">
+          <div className="qre-block qre-block-what">
             <h4>What</h4>
             <p>Simple turn with flexion (bending) of the lower joints added after the fall line.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-why">
             <h4>Why</h4>
             <p>To maintain balance and stability in the later part of the turn; “releasing” the centre of mass from one turn to the next links turns smoothly.</p>
           </div>
-          <div className="qre-block">
+          <div className="qre-block qre-block-how">
             <h4>How</h4>
             <ul className="qre-how-list">
               <li>Perform a Beginner Turn (heel or toeside) with core rotation and knee/ankle edging.</li>

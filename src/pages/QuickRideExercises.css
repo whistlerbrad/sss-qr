@@ -72,10 +72,11 @@
   color: #0f172a;
   border-radius: 0 0 var(--radius) var(--radius);
   overflow: hidden;
+  padding: 0 1rem 1.5rem 1rem;
 }
 
 .qre-step-goal {
-  margin: 0;
+  margin: 0 -1rem 0 -1rem;
   padding: 0.6rem 1rem;
   font-size: 0.85rem;
   color: #334155;
@@ -103,25 +104,92 @@
   border-top: none;
 }
 
+/* Control section — group plain content blocks (no What/Why/How/Keywords/Tactics) with neutral treatment */
+.qre-control .qre-exercise .qre-block:not(.qre-block-what):not(.qre-block-why):not(.qre-block-how):not(.qre-keywords):not(.qre-block-tactics) {
+  margin: 0 0.5rem 0.5rem;
+  padding: 0.65rem 1rem 0.85rem;
+  background: rgba(241, 245, 249, 0.9);
+  border-radius: var(--radius);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.qre-control .qre-exercise .qre-block:not(.qre-block-what):not(.qre-block-why):not(.qre-block-how):not(.qre-keywords):not(.qre-block-tactics) h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Block types — clear, colorful separation for What / Why / How / Key words */
 .qre-block {
-  padding: 0.4rem 1rem 0.75rem;
-  border-bottom: none;
+  padding: 0.5rem 1rem 0.75rem;
+  border-radius: var(--radius);
+}
+
+.qre-block-what,
+.qre-block-why,
+.qre-block-how,
+.qre-block-context {
+  margin: 0 0.5rem 0.5rem;
+  padding: 0.6rem 1rem 0.85rem;
+  border-left: 4px solid transparent;
+}
+
+.qre-block-what {
+  background: rgba(14, 165, 233, 0.1);
+  border-left: none;
+}
+
+.qre-block-what h4 {
+  color: #0369a1;
+}
+
+.qre-block-why {
+  background: rgba(34, 197, 94, 0.08);
+  border-left: none;
+}
+
+.qre-block-why h4 {
+  color: #15803d;
+}
+
+.qre-block-how {
+  background: rgba(245, 158, 11, 0.08);
+  border-left-color: #f59e0b;
+}
+
+.qre-block-how h4 {
+  color: #b45309;
+}
+
+.qre-block-context {
+  background: rgba(148, 163, 184, 0.1);
+  border-left-color: #64748b;
+}
+
+.qre-block-context h4 {
+  color: #475569;
 }
 
 .qre-block h4 {
   font-size: 0.8rem;
-  font-weight: 600;
-  margin: 0 0 0.25rem;
-  color: #475569;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
+}
+
+.qre-block:not(.qre-block-what):not(.qre-block-why):not(.qre-block-how):not(.qre-block-context):not(.qre-keywords):not(.qre-block-tactics) h4 {
+  color: #475569;
 }
 
 .qre-block p,
 .qre-block ul {
   margin: 0;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 .qre-block ul {
@@ -129,7 +197,7 @@
 }
 
 .qre-block li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
 .qre-block li:last-child {
@@ -137,14 +205,23 @@
 }
 
 .qre-block.qre-keywords {
-  background: rgba(0, 0, 0, 0.03);
-  margin: 0 1rem 0.5rem;
-  padding: 0.5rem 0.75rem;
+  background: rgba(124, 58, 237, 0.08);
+  margin: 0 0.5rem 0.5rem;
+  padding: 0.6rem 1rem 0.85rem;
   border-radius: var(--radius);
+  border-left: none;
 }
 
 .qre-block.qre-keywords h4 {
   margin-bottom: 0.35rem;
+  color: #6d28d9;
+  font-weight: 700;
+}
+
+/* Align list with other cards (same left as WHAT/WHY/HOW content) */
+.qre-block.qre-keywords ul {
+  padding-left: 1.25rem;
+  margin-left: 0;
 }
 
 /* How sections — bullet list for readability */
@@ -163,22 +240,51 @@
   margin-bottom: 0;
 }
 
-/* Other tactics — list style (Basics, Sliding, Control), no extra padded wrapper */
+/* Other tactics — teaching tips (list style: Basics, Sliding, Control) */
 .qre-block-tactics {
-  /* Same padding as other blocks; no background/margin/border wrapper */
+  margin: 1rem 0.5rem 0.5rem;
+  padding: 1rem 0.75rem 1.1rem 0.75rem;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.12) 0%, rgba(13, 148, 136, 0.08) 100%);
+  border-radius: var(--radius);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+}
+
+.qre-block-tactics h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: #0f766e;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.qre-block-tactics h4::before {
+  content: "💡";
+  font-size: 1rem;
+}
+
+/* Override .qre-block ul so tactics list aligns with lightbulb (no extra indent) */
+.qre-block-tactics .qre-tactics-list {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .qre-tactics-list {
   list-style: none;
   padding-left: 0;
-  margin: 0.35rem 0 0;
+  margin: 0;
 }
 
 .qre-tactics-list li {
-  padding: 0.4rem 0 0.4rem 0.75rem;
-  margin-bottom: 0.35rem;
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
-  line-height: 1.45;
+  padding: 0.4rem 0 0.4rem 0;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+  font-size: 0.9rem;
+  color: #1e293b;
 }
 
 .qre-tactics-list li:last-child {
@@ -186,32 +292,38 @@
 }
 
 .qre-tactics-list li strong {
-  color: #334155;
+  color: #0f766e;
+  font-weight: 700;
 }
 
-/* Other tactics — card style (Turning, Flow), no extra padding */
+/* Other tactics — teaching tips (card style: Turning, Flow) */
 .qre-tactics {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .qre-tactic-card {
-  padding: 0.75rem 1rem;
-  background: rgba(0, 0, 0, 0.03);
+  padding: 1rem 1.15rem 1.1rem;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.12) 0%, rgba(13, 148, 136, 0.08) 100%);
   border-radius: var(--radius);
-  border-left: 3px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.25);
 }
 
 .qre-tactic-card h4 {
-  margin-bottom: 0.4rem;
-  color: #1e293b;
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f766e;
+  line-height: 1.35;
 }
 
 .qre-tactic-card p {
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #1e293b;
 }
 
 /* Step accent colours (match QuickRide page) */
