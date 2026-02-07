@@ -26,7 +26,7 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'link', id: 'timingcoordination', label: 'Timing & Coordination' },
   { type: 'separator' },
   { type: 'link', id: 'quickride', label: 'QuickRide' },
-  { type: 'link', id: 'quickrideexercises', label: 'QR Exercises' },
+  { type: 'link', id: 'quickrideexercises', label: 'QuickRide Teach' },
   { type: 'link', id: 'casi', label: 'CASI Study Guide' },
   { type: 'separator' },
   { type: 'link', id: 'sssresources', label: 'SSS Resources' },
