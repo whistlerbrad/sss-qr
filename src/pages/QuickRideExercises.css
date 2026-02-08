@@ -122,6 +122,17 @@
   letter-spacing: 0.04em;
 }
 
+.qre-standup-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.35rem;
+  color: #475569;
+}
+
+.qre-standup-heading:first-of-type {
+  margin-top: 0.35rem;
+}
+
 /* Block types — clear, colorful separation for What / Why / How / Key words */
 .qre-block {
   padding: 0.5rem 1rem 0.75rem;
@@ -166,7 +177,7 @@
 
 .qre-block-context {
   background: rgba(148, 163, 184, 0.1);
-  border-left-color: #64748b;
+  border-left: none;
 }
 
 .qre-block-context h4 {
@@ -294,6 +305,51 @@
 .qre-tactics-list li strong {
   color: #0f766e;
   font-weight: 700;
+}
+
+/* J-Turn teaching script (Sliding) */
+.qre-jturn-script {
+  margin: 1rem 0.5rem 0.5rem;
+  padding: 1rem 1rem 1.1rem;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(13, 148, 136, 0.06) 100%);
+  border-radius: var(--radius);
+  border: 1px solid rgba(20, 184, 166, 0.22);
+}
+
+.qre-jturn-script .qre-jturn-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+  color: #0f766e;
+}
+
+.qre-jturn-script .qre-jturn-objective {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #1e293b;
+}
+
+.qre-jturn-script .qre-jturn-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0.9rem 0 0.4rem;
+  color: #0f766e;
+}
+
+.qre-jturn-script .qre-jturn-heading:first-of-type {
+  margin-top: 0;
+}
+
+.qre-jturn-script p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: #1e293b;
+}
+
+.qre-jturn-script .qre-how-list {
+  margin: 0.35rem 0 0.5rem;
 }
 
 /* Other tactics — teaching tips (card style: Turning, Flow) */

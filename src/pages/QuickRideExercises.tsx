@@ -163,8 +163,41 @@ export function QuickRideExercises() {
               <li><strong>Push-Push-Glide:</strong> Small skate or push to build speed, then second push, then place free foot and glide.</li>
               <li><strong>Experiment with body positions:</strong> Fore/aft, lateral, rotational, vertical (tall/small).</li>
               <li><strong>Toe/Heel Drag:</strong> Drag free foot on toe or heel side to slow and change direction.</li>
-              <li><strong>J-Turn:</strong> While sliding, head and hips toward heel edge and drag heel; path follows a broad heelside arc. Turn until stopped on heel edge; try toeside too.</li>
+              <li><strong>J-Turn:</strong> See detailed teaching script below.</li>
             </ul>
+          </div>
+
+          <div id="sliding-j-turn" className="qre-block qre-jturn-script">
+            <h4 className="qre-jturn-title">Tactic: The J-Turn</h4>
+            <p className="qre-jturn-objective"><strong>Objective:</strong> To transition from a straight glide into a controlled stop using a single edge, creating a path in the snow that looks like the letter &quot;J.&quot;</p>
+
+            <h5 className="qre-jturn-heading">1. The Setup (The Straight Glide)</h5>
+            <p>Start in a neutral stance, pointing the board straight down the fall line (the &quot;Bunny Hill&quot; gradient). Keep the board flat to gain a small amount of momentum.</p>
+
+            <h5 className="qre-jturn-heading">2. The Initiation (Look and Point)</h5>
+            <p>To start the turn, the student must lead with their <strong>eyes and front shoulder</strong>:</p>
+            <ul className="qre-how-list">
+              <li><strong>Heelside:</strong> Look toward the side of the trail. Point the front knee and hip slightly toward the heel edge.</li>
+              <li><strong>Toeside:</strong> Look toward the side of the trail. Shift the weight slightly over the toes, pressing the shins into the front of the boots.</li>
+            </ul>
+
+            <h5 className="qre-jturn-heading">3. The Execution (The Arc)</h5>
+            <p>As the board begins to deviate from the fall line, increase the pressure on the chosen edge:</p>
+            <ul className="qre-how-list">
+              <li><strong>Rotational Pull:</strong> Gradually rotate the hips and shoulders toward the direction of the turn.</li>
+              <li><strong>Edge Engagement:</strong> Slowly &quot;sit back&quot; (Heelside) or &quot;stand up&quot; (Toeside) to increase the edge angle.</li>
+              <li><strong>The Finish:</strong> Continue across the hill until the board points slightly uphill, coming to a natural, balanced stop.</li>
+            </ul>
+
+            <h5 className="qre-jturn-heading">Instructor Tips &amp; Cues</h5>
+            <ul className="qre-how-list">
+              <li><strong>The &quot;Laser&quot; Cue:</strong> Tell students to imagine a laser pointer on their front knee. To turn, they need to point that laser toward the woods on the side of the run.</li>
+              <li><strong>Avoid the &quot;Kick&quot;:</strong> Watch for students trying to kick their back foot out (ruddering). Remind them that the turn starts at the front of the board, not the back.</li>
+              <li><strong>Safety First:</strong> Ensure students have enough space across the run, as a proper J-Turn requires traversing the width of the slope.</li>
+            </ul>
+
+            <h5 className="qre-jturn-heading">Why this works</h5>
+            <p>The J-Turn is the first time a student feels the board <strong>sidecut</strong> doing the work. It teaches them that looking where they want to go naturally leads to rotation, which leads to an edge change—the fundamental building block of a linked S-turn.</p>
           </div>
         </article>
         </div>
@@ -225,13 +258,36 @@ export function QuickRideExercises() {
 
         <article id="control-stand-up" className="qre-exercise">
           <h3>How to Stand Up</h3>
+
           <div className="qre-block">
-            <h4>Option 1</h4>
-            <p>Facing downhill, slide hips close to the board. Back hand on snow by hips, other arm reach forward/up. Rock forward and stand quickly; can grab toe edge to help.</p>
+            <h4>The Heelside Stand-Up</h4>
+            <h5 className="qre-standup-heading">1. The Setup (The Foundation)</h5>
+            <p><strong>The &quot;Dig&quot;:</strong> Before trying to stand, have the student use their heels to dig a small &quot;shelf&quot; or trench in the snow. This prevents the board from sliding away as they apply pressure.</p>
+            <p><strong>Board Position:</strong> Ensure the board is perfectly perpendicular (across) the fall line. If it&apos;s tilted even slightly downhill, it will shoot away.</p>
+
+            <h5 className="qre-standup-heading">2. The Execution (The &quot;Reach &amp; Rock&quot;)</h5>
+            <p><strong>The Grab:</strong> Have the student grab the middle of the toe-side edge with their front hand. This pulls their chest closer to their knees.</p>
+            <p><strong>The Push:</strong> Use the back hand to push off the snow right next to the hip.</p>
+            <p><strong>The Momentum:</strong> Instead of pushing &quot;up,&quot; tell them to rock their weight forward over the board. The goal is to get the &quot;butt over the boots.&quot;</p>
+
+            <h5 className="qre-standup-heading">3. Common Fixes (Troubleshooting)</h5>
+            <p><strong>&quot;Reach for the Trees&quot;:</strong> If grabbing the board is too difficult, have them reach both arms straight forward toward the opposite side of the run as they stand.</p>
+            <p><strong>The &quot;Quick Pull&quot;:</strong> Sometimes a tiny pull on the board toward the body right as they stand helps seat the edge into the snow.</p>
           </div>
+
           <div className="qre-block">
-            <h4>Option 2</h4>
-            <p>From seated, roll onto knees (turning board 45° to slope can help). Once on knees facing uphill, stand and begin sliding on toe edge. If they can do a small turn, they can stand to toeside and pivot board to heel edge.</p>
+            <h4>Toeside Stand-Up</h4>
+            <p><strong>Why it&apos;s easier:</strong> For students with less core strength or flexibility, pushing up from the knees is much more stable than pushing up from the sit-bones.</p>
+            <ul className="qre-how-list">
+              <li><strong>Step 1:</strong> While sitting, roll onto the belly so the board is uphill from the body.</li>
+              <li><strong>Step 2:</strong> Dig the toe edge into the snow.</li>
+              <li><strong>Step 3:</strong> Push up with the hands like a &quot;push-up&quot; until the student is on their knees.</li>
+              <li><strong>Step 4:</strong> Push back with the hands to move the weight over the toes and stand up.</li>
+            </ul>
+
+            <h5 className="qre-standup-heading">Tips</h5>
+            <p><strong>Slope Selection:</strong> If a student is struggling, move them to a slightly steeper section of the beginner hill. It sounds counter-intuitive, but a steeper slope brings the &quot;snow&quot; closer to their back, making the stand-up much easier.</p>
+            <p><strong>The &quot;Buddy Pull&quot;:</strong> As an instructor, offer one hand. Don&apos;t pull them up; let them pull themselves up using your hand as a fixed anchor.</p>
           </div>
         </article>
 
@@ -260,6 +316,29 @@ export function QuickRideExercises() {
             <ul className="qre-tactics-list">
               <li><strong>Stop &amp; Go / Red Light Green Light:</strong> Practice stopping and starting on cue.</li>
               <li><strong>Ballerina / Cowboy:</strong> On toeside avoid “ballerina” (extended ankles, unstable); encourage “cowboy”—ankle relaxed, weight over balls of feet. On heelside: wide base, knees out, weight even.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article id="control-sideslipping-tactic" className="qre-exercise">
+          <h3>Tactic: Side-Slipping</h3>
+          <div className="qre-block qre-jturn-script">
+            <p className="qre-jturn-objective"><strong>Objective:</strong> To control speed and come to a stop while moving directly down the fall line on a single edge.</p>
+
+            <h5 className="qre-jturn-heading">1. The Setup</h5>
+            <p>The board is perpendicular to the slope (horizontal). The student starts in a balanced, &quot;ready&quot; position with knees flexed.</p>
+
+            <h5 className="qre-jturn-heading">2. The Execution (The &quot;Gas Pedal&quot;)</h5>
+            <ul className="qre-how-list">
+              <li><strong>Release:</strong> Slowly flatten the board by relaxing the ankles. For heelside, lower the toes; for toeside, lower the heels.</li>
+              <li><strong>Glide:</strong> As the edge angle decreases, the board will begin to slide down the fall line.</li>
+              <li><strong>Engage:</strong> To slow down or stop, &quot;apply the brakes&quot; by pulling the toes up (heelside) or pushing the shins forward (toeside) to increase the edge angle.</li>
+            </ul>
+
+            <h5 className="qre-jturn-heading">3. Instructor Cues</h5>
+            <ul className="qre-how-list">
+              <li><strong>&quot;Ankles, not Hips&quot;:</strong> Remind students that the movement comes from the ankles. Excessive hip movement usually leads to a fall.</li>
+              <li><strong>&quot;Heavy Feet&quot;:</strong> Encourage them to keep weight centered over the board so it doesn&apos;t &quot;chatter&quot; or catch an edge.</li>
             </ul>
           </div>
         </article>
@@ -304,6 +383,15 @@ export function QuickRideExercises() {
               <li>Equalize weight and increase edge to slow/stop</li>
             </ul>
           </div>
+          <div className="qre-block qre-block-tactics">
+            <h4>Instructor Cues</h4>
+            <ul className="qre-tactics-list">
+              <li><strong>&quot;Point the Flashlight&quot;:</strong> Imagine your front knee is a flashlight. Point it toward the far corner of the run to start moving that way.</li>
+              <li><strong>&quot;Shift the Weight&quot;:</strong> Lean toward your front foot like you&apos;re trying to step on a bug. This pulls the nose downhill and starts the lateral move.</li>
+              <li><strong>&quot;Eyes on the Horizon&quot;:</strong> Don&apos;t look at your feet. Look at the trees at the edge of the run where you want to go.</li>
+              <li><strong>&quot;The Seesaw&quot;:</strong> Gently move your weight from the front foot (to start) to the back foot (to slow down and stop).</li>
+            </ul>
+          </div>
         </article>
 
         <article id="control-power-pendulum" className="qre-exercise">
@@ -335,6 +423,19 @@ export function QuickRideExercises() {
               <li>Rotate hips uphill and look uphill to slow down</li>
               <li>Turn head and look back downhill, repeat in new direction</li>
             </ul>
+          </div>
+          <div className="qre-block qre-block-tactics">
+            <h4>Instructor Cues</h4>
+            <ul className="qre-tactics-list">
+              <li><strong>&quot;Squat to Grip&quot;:</strong> As you move across the hill, sink lower into your boots. This puts more &quot;bite&quot; into the edge and prevents chattering.</li>
+              <li><strong>&quot;Drive the Front Knee&quot;:</strong> Instead of just leaning, actively push your front knee toward the direction of travel. This engages the sidecut of the board earlier.</li>
+              <li><strong>&quot;Gas and Brake&quot;:</strong> Think of your front foot as the gas (flatten to go) and your back foot as the brake (apply pressure to stop).</li>
+              <li><strong>&quot;Spray the Woods&quot;:</strong> Try to push the snow toward the side of the trail. This encourages the student to use their lower body to create pressure rather than just leaning their torso.</li>
+            </ul>
+          </div>
+          <div className="qre-block qre-block-tactics">
+            <h4>Instructor Tips</h4>
+            <p>If a student is struggling with the Power Pendulum, have them try it on a slightly steeper pitch. The increased gravity forces them to realize that &quot;just leaning&quot; isn&apos;t enough—they have to actively manage the edge pressure to stay in control.</p>
           </div>
         </article>
         </div>
@@ -410,7 +511,7 @@ export function QuickRideExercises() {
             </div>
             <div className="qre-tactic-card">
               <h4>2. Garland Exercise</h4>
-            <p>Traverse on toe or heel edge. Initiate rotation (hips downhill, body as if starting turn). As board approaches fall line, reverse—rotate away from fall line and increase edge to slow.</p>
+            <p>See detailed teaching script below. Traverse on toe or heel edge; initiate rotation toward fall line, then pull back to traverse.</p>
             </div>
             <div className="qre-tactic-card">
               <h4>3. J-Turns</h4>
@@ -428,6 +529,33 @@ export function QuickRideExercises() {
               <h4>6. The “Moustache” (Fall Line Edge Change)</h4>
               <p>Like Power Pendulum—allow board into fall line slightly. Once enough speed, rotate core (hips, knees, feet) uphill; eyes up over lead shoulder. Feel base flat momentarily; as board slides back downhill, pressure opposite edge and continue rotation. Hands-on: hold uphill (lead) hand at edge change to stabilize.</p>
             </div>
+          </div>
+        </article>
+
+        <article id="turning-garland-turns" className="qre-exercise">
+          <h3>Tactic: Garland Turns (The &quot;Floating Leaf&quot;)</h3>
+          <div className="qre-block qre-jturn-script">
+            <p className="qre-jturn-objective"><strong>Objective:</strong> To practice initiating and finishing a turn without the high-consequence moment of crossing the fall line.</p>
+
+            <h5 className="qre-jturn-heading">1. The Setup</h5>
+            <p>The student starts in a traverse (moving across the hill) on a comfortable edge (e.g., heelside).</p>
+
+            <h5 className="qre-jturn-heading">2. The Initiation (The &quot;Intro&quot;)</h5>
+            <p>Ask the student to point the nose of the board slightly downhill toward the fall line. This is done by shifting weight to the front foot and relaxing the uphill edge.</p>
+
+            <h5 className="qre-jturn-heading">3. The Finish (The &quot;Outro&quot;)</h5>
+            <p>Before the board points straight down the hill, the student applies the J-Turn logic:</p>
+            <ul className="qre-how-list">
+              <li>Look back across the hill.</li>
+              <li>Apply pressure to the original edge.</li>
+              <li>Bring the board back to a horizontal traverse.</li>
+            </ul>
+
+            <h5 className="qre-jturn-heading">4. Instructor Cues</h5>
+            <ul className="qre-how-list">
+              <li><strong>&quot;Point and Pull&quot;:</strong> Point the nose down, then pull it back to safety.</li>
+              <li><strong>&quot;The Half-Moon&quot;:</strong> Tell them they are drawing a series of small crescents across the run rather than one long line.</li>
+            </ul>
           </div>
         </article>
         </div>
