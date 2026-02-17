@@ -1,0 +1,175 @@
+/* Down Unweighted Turns — teaching page */
+.dut-page {
+  padding: 1rem 1rem 2rem;
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.dut-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.dut-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+.dut-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dut-quicklinks a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.dut-quicklinks a:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--text);
+}
+
+.dut-quicklinks a:active {
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+}
+
+.dut-section {
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  scroll-margin-top: 4rem;
+}
+
+.dut-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, #0e7490 0%, #155e75 100%);
+}
+
+.dut-section-content {
+  background: #fff;
+  color: #0f172a;
+  padding: 1rem 1rem 1.25rem;
+}
+
+.dut-section-content p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.dut-section-content p:last-child {
+  margin-bottom: 0;
+}
+
+.dut-block {
+  margin: 0.75rem 0 0;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  background: rgba(14, 165, 233, 0.08);
+}
+
+.dut-block-tip h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+  color: #0369a1;
+}
+
+.dut-block-tip p {
+  margin: 0 0 0.4rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.dut-block-tip p:last-child {
+  margin-bottom: 0;
+}
+
+.dut-note {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+.dut-list {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.dut-list li {
+  margin-bottom: 0.5rem;
+}
+
+.dut-list li:last-child {
+  margin-bottom: 0;
+}
+
+.dut-terrain {
+  margin-bottom: 0.5rem;
+}
+
+.dut-steps {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.dut-steps li {
+  margin-bottom: 0.5rem;
+}
+
+.dut-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.dut-cue {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.dut-stage h2 {
+  background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+}
+
+.dut-section-tip h2 {
+  background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+}
+
+.dut-section-tip .dut-section-content {
+  background: #fff;
+  color: #0f172a;
+}
+
+.dut-section-tip .dut-section-content p {
+  color: #1e293b;
+}

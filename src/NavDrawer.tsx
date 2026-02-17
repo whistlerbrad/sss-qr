@@ -1,6 +1,6 @@
 import './NavDrawer.css'
 
-export type NavView = 'home' | 'casi' | 'quickride' | 'quickrideexercises' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'alpinegroups101' | 'sssresources' | 'studentpage'
+export type NavView = 'home' | 'casi' | 'quickride' | 'quickrideexercises' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'downunweightedturns' | 'alpinegroups101' | 'sssresources' | 'studentpage'
 
 interface NavDrawerProps {
   open: boolean
@@ -24,6 +24,7 @@ const NAV_ITEMS: NavItem[] = [
   { type: 'link', id: 'edging', label: 'Edging' },
   { type: 'link', id: 'pressure', label: 'Pressure' },
   { type: 'link', id: 'timingcoordination', label: 'Timing & Coordination' },
+  { type: 'link', id: 'downunweightedturns', label: 'Down Unweighted Turns' },
   { type: 'separator' },
   { type: 'link', id: 'quickride', label: 'QuickRide' },
   { type: 'link', id: 'quickrideexercises', label: 'QuickRide Teach' },

@@ -19,6 +19,7 @@ import { PivotSteering } from './pages/PivotSteering'
 import { Edging } from './pages/Edging'
 import { Pressure } from './pages/Pressure'
 import { TimingCoordination } from './pages/TimingCoordination'
+import { DownUnweightedTurns } from './pages/DownUnweightedTurns'
 import { AlpineGroups101 } from './pages/AlpineGroups101'
 import { SSSResources } from './pages/SSSResources'
 import { StudentLanding } from './pages/StudentLanding'
@@ -194,6 +195,12 @@ export default function App() {
       {view === 'timingcoordination' && (
         <main className="app-main-content">
           <TimingCoordination />
+        </main>
+      )}
+
+      {view === 'downunweightedturns' && (
+        <main className="app-main-content">
+          <DownUnweightedTurns />
         </main>
       )}
 
