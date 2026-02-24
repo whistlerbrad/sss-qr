@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './NavDrawer.css'
 
 export type NavView = 'home' | 'casi' | 'quickride' | 'quickrideexercises' | 'lessonplans' | 'teachingscripts' | 'positionbalance' | 'pivotsteering' | 'edging' | 'pressure' | 'timingcoordination' | 'downunweightedturns' | 'alpinegroups101' | 'sssresources' | 'studentpage'
@@ -35,6 +36,16 @@ const NAV_ITEMS: NavItem[] = [
 ]
 
 export function NavDrawer({ open, currentView, onClose, onNavigate }: NavDrawerProps) {
+  useEffect(() => {
+    if (open) {
+      const prev = document.body.style.overflow
+      document.body.style.overflow = 'hidden'
+      return () => {
+        document.body.style.overflow = prev
+      }
+    }
+  }, [open])
+
   const handleNav = (view: NavView) => {
     onNavigate(view)
     onClose()
